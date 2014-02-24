@@ -72,7 +72,7 @@
     profilePicture.frame = CGRectMake(4, 4, 70, 70);
     
     // Create Notification text
-    UILabel *notificationText = [[UILabel alloc] initWithFrame: CGRectMake(82, 2, 220, 100)];
+    UILabel *notificationText = [[UILabel alloc] initWithFrame: CGRectMake(82, 3, 220, 100)];
     [notificationText setFont:[UIFont fontWithName:@"Helvetica Neue" size:12]];
     //[notificationText setBackgroundColor:[UIColor redColor]];
     
@@ -109,7 +109,7 @@
 
 - (NSString *)styledHTMLwithHTML:(NSString *)HTML {
     
-    NSString *style = @"<meta charset=\"UTF-8\"><style> body { font-family: 'HelveticaNeue'; font-size: 14px; } p {line-height: 16px; margin-bottom: 0px} b {font-family: 'HelveticaNeue' !important; font-weight: bold; }</style>";
+    NSString *style = @"<meta charset=\"UTF-8\"><style> body { font-family: 'HelveticaNeue'; font-size: 13px; } p {line-height: 16px; margin-bottom: 0px} b {font-family: 'HelveticaNeue' !important; font-weight: bold; }</style>";
     
     return [NSString stringWithFormat:@"%@%@", style, HTML];
 }
